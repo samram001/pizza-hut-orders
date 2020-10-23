@@ -1,0 +1,40 @@
+<h3>Order Detail</h3>
+<div class="orderDetails">
+    <div class="col-xs-12 orderAdress">
+        <!-- Delivery Address section -->
+        <div class="col-md-6 col-sm-6 col-xs-12">
+            <h4>Delivery Address</h4>
+            <div class="customerName">{{selectedOrder["customer_name"]}}</div>
+            <div>{{selectedOrder["address"]}}</div>
+            <div>{{selectedOrder["mobile_numer"]}}</div>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-12">
+            <!-- Order Item detail section -->
+            <h4>Items</h4>
+            <table class="col-xs-6">
+                <tbody>
+                    <tr *ngFor="let item of selectedOrder['items']">
+                        <ng-container *ngFor="let product of item|keyvalue">
+                            <td class="text-left">{{product.key}}</td>
+                            <td class="text-right">Rs {{product.value}}</td>
+                        </ng-container>
+
+                    </tr>
+                </tbody>
+                <tfoot style="border-top:1px solid #000;border-bottom:1px solid #000;">
+                    <tr>
+                        <td class="text-left">Subtotal</td>
+                        <td class="text-right">Rs {{selectedOrder['total_amount']}}</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">Grand Total</td>
+                        <td class="text-right">Rs {{selectedOrder['total_amount']}}</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+    <div class="orderItems">
+
+    </div>
+</div>

@@ -1,0 +1,92 @@
+{
+    "orders": [
+        {
+            "id": "1",
+            "customer_name": "Mary",
+            "no_of_items": "3",
+            "total_amount": "2250",
+            "status": "Preparing",
+            "items": [
+                {
+                    "Margherita": "750"
+                },
+                {
+                    "Double Cheese Margherita": "750"
+                },
+                {
+                    "Peppy Paneer": "750"
+                }
+            ],
+            "address": "2522 Ash Street \n Cedar Hill, TX 75253",
+            "mobile_numer": "287-328-8546"
+        },
+        {
+            "id": "2",
+            "customer_name": "Roland L. Worthington",
+            "no_of_items": "2",
+            "total_amount": "1500",
+            "status": "Order Received",
+            "items": [
+                {
+                    "Farm House": "750"
+                },
+                {
+                    "Peppy Paneer": "750"
+                }
+            ],
+            "address": "586 Frederick Street \n  Sacramento, CA 95814",
+            "mobile_numer": "317-318-8816"
+        },
+        {
+            "id": 3,
+            "customer_name": "Robert",
+            "no_of_items": "2",
+            "total_amount": "1500",
+            "status": "Preparing",
+            "items": [
+                {
+                    "Margherita": "750"
+                },
+                {
+                    "Double Cheese Margherita": "750"
+                }
+            ],
+            "address": "1517 Frosty Lane \n Grand Gorge, NY 12434",
+            "mobile_numer": "307-222-8846"
+        },
+        {
+            "id": 4,
+            "customer_name": "John L. Dunn",
+            "no_of_items": "2",
+            "total_amount": "1500",
+            "status": "Order Received",
+            "items": [
+                {
+                    "Mexican Green Wave": "750"
+                },
+                {
+                    "Deluxe Veggie": "750"
+                }
+            ],
+            "address": "3939 Pickens Way \nDallas, TX 75234",
+            "mobile_numer": "307-328-3333"
+        },
+        {
+            "id": 5,
+            "customer_name": "Heather B. Reilly",
+            "no_of_items": "2",
+            "total_amount": "1500",
+            "status": "Order Received",
+            "items": [
+                {
+                    "Farm House": "750"
+                },
+                {
+                    "Peppy Paneer": "750"
+                }
+            ],
+            "address": "812 Arbor Court \n  Rawlins, WY 82301",
+            "mobile_numer": "307-328-8846"
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+.orderDetails {
+    border: 1px solid rgb(248, 248, 248);
+    border-radius: 0.8rem;
+    overflow: hidden;
+}
+.orderAdress {
+    padding: 1.5rem;
+    border-bottom: 0.1rem solid rgb(232, 232, 232);
+    background: rgb(248, 248, 248);
+}
+.customerName {
+    font-size: inherit;
+    line-height: 1.5;
+    margin: 0px;
+    font-weight: 500;
+    color: rgb(54, 54, 54);
+}
+.orderItems {
+    padding: 1.5rem;
+    border-bottom: 0.1rem solid rgb(232, 232, 232);
+    background: rgb(255, 255, 255);
+}

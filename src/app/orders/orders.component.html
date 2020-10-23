@@ -1,0 +1,18 @@
+<table class="table table-striped orderlist_table">
+    <thead>
+        <th *ngFor="let header of orderListHeaders">{{header.display}}</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let order of orderList" (click)="selectedOrder($event,order.id)">
+            <td *ngFor="let column of orderListHeaders">
+                <div *ngIf="column.value!='Action'">
+                    {{order[column.value]}}
+                </div>
+                <div *ngIf="column.value=='Action'">
+                    <button name="actionButton" [hidden]="order.status=='Ready to Serve'"
+                        (click)="changeStatus(order.id,order.status)">Change Status</button>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
